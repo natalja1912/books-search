@@ -1,5 +1,5 @@
 # Название проекта
-**Сервис по поиску книг**
+## Сервис по поиску книг
 Интерактивное приложение, где пользователи могут искать книги по ключевым словам.
 Для поиска книг используется Open Library Books API.
 https://openlibrary.org/dev/docs/api/books
@@ -14,7 +14,7 @@ https://openlibrary.org/dev/docs/api/books
  * Адаптивная верстка
 
 ## Ссылка на сайт github pages
-https://github.com/natalja1912/news-explorer-frontend
+https://natalja1912.github.io/books-search
 
 
 
