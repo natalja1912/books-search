@@ -1,5 +1,5 @@
 import React from "react";
-import Book from "../Book/Book";
+import { Book } from "../index";
 import "./BooksList.css";
 
 const BooksList = ({ books }) => (
@@ -7,7 +7,7 @@ const BooksList = ({ books }) => (
     <ul className="bookslist__list">
       {books &&
         books.map((item) => (
-          <li className="bookslist__item">
+          <li className="bookslist__item" key={item.key}>
             <Book book={item} />
           </li>
         ))}

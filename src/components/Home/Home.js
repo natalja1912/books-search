@@ -17,7 +17,7 @@ function Home({ isLoading, errMess, books }) {
     <div className="main">
       <h1 className="main__heading">Поиск книг</h1>
       <SearchForm />
-      {isLoading && <Preloader />}
+      {isLoading && <Preloader text={true} />}
       {errMess && <ErrorText text={errMess} />}
       {books && books.length !== 0 && !errMess && (
         <BooksList books={visibleBooks} />

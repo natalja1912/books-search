@@ -1,6 +1,7 @@
 .book {
-  display: flex;
-  justify-content: space-between;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   padding: 40px 40px 50px;
 }
 
@@ -10,7 +11,7 @@
 }
 
 .book__text-group {
-  flex-grow: 1;
+  box-sizing: border-box;
   padding-left: 50px;
 }
 
@@ -57,7 +58,7 @@
   transition: all 0.4s;
 }
 
-.book__link:hover{
+.book__link:hover {
   color: #212c8a;
 }
 
@@ -74,7 +75,8 @@
 
 @media screen and (max-width: 500px) {
   .book {
-    padding: 20px 10px 20px;
+    padding: 20px 20px 20px;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -85,7 +87,27 @@
   }
 
   .book__text-group {
-    width: 100%;
+    margin-top: 20px;
     padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .book__link{
+    align-self: center;
+    font-size: 22px;
+  }
+
+  .book__subtitle{
+    font-size: 20px;
+  }
+
+  .book__title{
+    font-size: 22px;
+  }
+  .book__text{
+    font-size: 22px;
   }
 }

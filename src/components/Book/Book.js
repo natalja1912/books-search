@@ -4,7 +4,6 @@ import * as Image from '../../icons';
 import "./Book.css";
 
 function Book({ book }) {
-  console.log(book)
   const coverUrl = `http://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`;
 
   return (
