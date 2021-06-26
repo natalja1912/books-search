@@ -25,7 +25,7 @@ function DetailedBookView({ books }) {
     return (
         <div className="book">
             <div>
-                {!isImageLoaded && <Preloader text={false} />}
+                {!isImageLoaded && book.cover_i && <Preloader text={false} />}
                 {book.cover_i ? <img className="book__image" onLoad={handleImageLoaded} src={coverUrl} alt="Обложка книги" /> :
                     <Image.NoPhotoIcon />}
             </div>
