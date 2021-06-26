@@ -1,0 +1,5 @@
+export const API_BOOKS_REQUEST = "API_BOOKS_REQUEST";
+export const API_BOOKS_FAILED = "API_BOOKS_FAILED";
+export const API_BOOKS_SUCCEDED = "API_BOOKS_SUCCEDED";
+
+export const ADD_QUERY = "ADD_QUERY";

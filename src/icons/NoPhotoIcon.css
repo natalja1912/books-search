@@ -1,0 +1,8 @@
+.icon{
+    width: 200px;
+    height: 250px;
+    background-image: url('../images/photo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,44 @@
+.card {
+  text-decoration: none;
+}
+
+.card__group {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__image {
+  width: 200px;
+  height: 250px;
+}
+
+.card__title {
+  margin: 0;
+  margin: 10px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #ffffff;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media screen and (max-width: 500px){
+  .card {
+    width: 250px;
+  }
+  
+  .card__image {
+    width: 250px;
+    height: 300px;
+  }
+  
+}
