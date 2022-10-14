@@ -5,7 +5,9 @@ import { Home, DetailedBookView } from "./components";
 import "./styles.css";
 
 export default function App() {
-  window.onerror((err) => console.log(err));
+  window.addEventListener("error", (event) => {
+    console.log(event);
+  });
   
   return (
     <div className="page">
