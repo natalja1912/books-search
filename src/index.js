@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import ReactDOM from "react-dom";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import App from "./App";
 
@@ -10,3 +11,5 @@ ReactDOM.render(
   </Fragment>,
   rootElement
 );
+
+serviceWorkerRegistration.register();

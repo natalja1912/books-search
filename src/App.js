@@ -5,6 +5,8 @@ import { Home, DetailedBookView } from "./components";
 import "./styles.css";
 
 export default function App() {
+  window.onerror((err) => console.log(err));
+  
   return (
     <div className="page">
       <Provider store={store}>
